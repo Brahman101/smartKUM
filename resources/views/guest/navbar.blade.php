@@ -1,26 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-dark mt-4" style="background-color: #80000000">
-	<div class="container" >
-		<a class="navbar-brand mt-1 fs-4" href="/login">
-			SmartKUM
-		</a>
-		<button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item active me-4">
-					<a class="nav-link text-white " href="/beranda"><i class="fa-solid fa-table-columns pe-2"></i>Dashboard</a>
-				</li>
-				<li class="nav-item active me-4">
-					<a class="nav-link text-white " href="/login"><i class="fa-solid fa-right-to-bracket pe-2"></i>Login</a>
-				</li>
-				<li class="nav-item active me-3">
-					<a class="nav-link text-white " href="/register"><i class="fa-solid fa-book-bookmark pe-2"></i>Register</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link text-white " href="/status"><i class="fa-solid fa-folder-tree pe-2"></i>Status</a>
-				</li>
-			</ul>
-		</div>
+<link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+<nav class="navbar navbar-expand-lg">
+	<div class="container">
+		<!-- Top Details-->
+		<nav class="navbar navbar-expand-lg navbar-kesatu">
+			<div class="container-navbar d-flex flex-row align-items-center">
+				<img src="{{ asset('img\bg/LogoKotaBatu.png') }}" alt="Logo Kota Batu" class="logo-batu">
+				<img src="{{ asset('img\bg/ikon_bangunan.png') }}" alt="Alamat" class="ikon-topnav">
+				<p>Bagian Hukum Setda. Kota Wisata Batu</p>
+				<img src="{{ asset('img\bg/ikon_mail.png') }}" alt="E-mail" class="ikon-topnav">
+				<p>hukumkwb@gmail.com</p>
+				<img src="{{ asset('img\bg/ikon_telepon.png') }}" alt="NoTelp" class="ikon-topnav">
+				<p>(0341) 591032</p>
+			</div>
+		</nav>
 	</div>
-</nav> 
+</nav>
+
+<!-- Logo & Title -->
+<header class="web-intro">
+	<div class="container d-flex flex-column logo-title justify-content-center align-items-center">
+		<img src="{{asset('img\bg/ikon_simprokum.png')}}" alt="SIMPROKUM" class="logo-simprokum">
+	</div>
+</header>
