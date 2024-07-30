@@ -1,67 +1,65 @@
 @extends('guest.main')
 
-@section('css')
+<!-- @section('css')
 <link rel="stylesheet" type="text/css" href="{{ asset('/css/login.css') }}">
-@endsection
+@endsection -->
 
 @section('content')
-<div class="container">
-  <div class="row mt-5 mb-5">
-    <div class="col-10 col-sm-10 col-md-10 col-lg-12 mx-auto position-relative bg-light rounded p-3">
-    <div class="row">
-      <div class="col">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <img src="/img/bg/logo_jdih.png" alt="logo_jdih" class="p-2">
-              <h1 class="h2 pe-2"> Daftar Katalog Produk Hukum Kota Batu</h1>
-          </div>
-          <div class="table-responsive">
-              <table class="table table-striped table-sm" id="tableKasubagDokumentasi">
-                  <thead>
-                      <tr class="text-center">
-                      <th scope="col">No</th>
-                      <th scope="col">Nomor</th>
-                      <th scope="col">Tahun</th>
-                      <th scope="col">Judul</th>
-                      <th scope="col">Keterangan Dokumen</th>
-                      <th scope="col">Jenis</th>
-                      <th scope="col">Tanggal Pengundangan</th>
-                      <th scope="col">Action</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      @foreach($draft->where('publikasi',1)->sortDesc() as $draft)
-                      <tr>
-                          <td>{{$loop->iteration}}</td>
-                          <td>{{$draft->nomor}}</td>
-                          <td>{{$draft->tahun}}</td>
-                          <td>{{$draft->judul}}</td>
-                          @if($draft->status_dokumen == 'mengganti')
-                          <td>{{$draft->status_dokumen}} dokumen {{$draft->mengganti}}</td>
-                          @else
-                          <td>{{$draft->status_dokumen}}</td>
-                          @endif
-                          <td>{{$draft->jenis}}</td>
-                          <td>{{date('d-m-Y', strtotime($draft->tanggal_pengundangan))}}</td>
-                          <td>
-                              <div class="mx-auto">
-                                <a href="/dashboard/readprodukhukum/{{$draft->id}}" class="badge bg-primary border-0 text-decoration-none">lihat</a>
-                              </div>
-                          </td>
-                      </tr>
-                      @endforeach
-                  </tbody>
-              </table>
-          </div>
+<link rel="stylesheet" href="{{asset('css/dashboard2.css')}}">
+<section>
+  <div class="outer-container d-flex align-items-center justify-content-center">
+    <div class="inner-container">
+      <div class="table-header d-flex flex-row align-items-center justify-content-between">
+        <img src="{{asset('img\bg/logo_jdih.png')}}" alt="logo_jdih" class="logo-table">
+        <h3>Daftar Katalog Produk Hukum Kota Batu</h3>
+      </div>
+      <div class="table-responsive">
+        <table class="table" id="tableKasubagDokumentasi">
+          <thead>
+            <tr class="text-center">
+              <th class="col-sm-1">No</th>
+              <th class="col-sm-1">Nomor</th>
+              <th class="col-1">Tahun</th>
+              <th class="col-3">Judul</th>
+              <th class="col-3">Keterangan Dokumen</th>
+              <th class="col-1">Jenis</th>
+              <th class="col-3">Tanggal Pengundangan</th>
+              <th class="col-1">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach($draft->where('publikasi',1)->sortDesc() as $draft)
+            <tr>
+              <td>{{$loop->iteration}}</td>
+              <td>{{$draft->nomor}}</td>
+              <td>{{$draft->tahun}}</td>
+              <td>{{$draft->judul}}</td>
+              @if($draft->status_dokumen == 'mengganti')
+              <td>{{$draft->status_dokumen}} dokumen {{$draft->mengganti}}</td>
+              @else
+              <td>{{$draft->status_dokumen}}</td>
+              @endif
+              <td>{{$draft->jenis}}</td>
+              <td>{{date('d-m-Y', strtotime($draft->tanggal_pengundangan))}}</td>
+              <td>
+                <div class="mx-auto">
+                  <a href="/dashboard/readprodukhukum/{{$draft->id}}" class="badge bg-primary border-0 text-decoration-none">Lihat</a>
+                </div>
+              </td>
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 @section('js')
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('#tableKasubagDokumentasi').DataTable();
-    } );
+  $(document).ready(function() {
+    $('#tableKasubagDokumentasi').DataTable();
+  });
 </script>
 @endsection
 

@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-kesatu">
 	<div class="container">
 		<!-- Top Details-->
 		<nav class="navbar navbar-expand-lg navbar-kesatu">
-			<div class="container-navbar d-flex flex-row align-items-center">
+			<div class="container-navbar d-flex flex-row align-items-center justify-content-start">
 				<img src="{{ asset('img\bg/LogoKotaBatu.png') }}" alt="Logo Kota Batu" class="logo-batu">
 				<img src="{{ asset('img\bg/ikon_bangunan.png') }}" alt="Alamat" class="ikon-topnav">
 				<p>Bagian Hukum Setda. Kota Wisata Batu</p>
@@ -20,5 +20,41 @@
 <header class="web-intro">
 	<div class="container d-flex flex-column logo-title justify-content-center align-items-center">
 		<img src="{{asset('img\bg/ikon_simprokum.png')}}" alt="SIMPROKUM" class="logo-simprokum">
+		<h2>SIMPROKUM</h2>
+		<h3>Sistem Informasi Pengajuan Produk Hukum</h3>
 	</div>
 </header>
+
+<nav id="navbar" class="navbar navbar-kedua justify-content-center align-items-start">
+	<ul class="navbar-nav d-flex flex-row ">
+		<li class="nav-item">
+			<a class="nav-link" href="/">Beranda</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://jdih.batukota.go.id/">JDIH Kota Batu</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Inovasi SIMPROKUM</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Tutorial SIMPROKUM</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/status">Status</a>
+		</li>
+	</ul>
+</nav>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const currentLocation = window.location.href;
+		const menuItem = document.querySelectorAll('#navbar .nav-link');
+		const menuLength = menuItem.length;
+
+		for (let i = 0; i < menuLength; i++) {
+			if (menuItem[i].href === currentLocation) {
+				menuItem[i].classList.add("active");
+			}
+		}
+	});
+</script>
