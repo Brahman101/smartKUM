@@ -1,6 +1,6 @@
 .video-container {
     padding: 20px;
-    background-image: url("../img/bg/Pemkot_Batu_Edit.jpg");
+    background-image: url("/img/bg/Pemkot_Batu_Edit.jpg");
     background-size: cover;
     backdrop-filter: blur(10px);
     position: relative;

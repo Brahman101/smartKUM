@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+<link rel="stylesheet" href="{{ asset('css/guest/navbar.css') }}">
 <nav class="navbar navbar-expand-lg navbar-kesatu">
 	<div class="container">
 		<!-- Top Details-->

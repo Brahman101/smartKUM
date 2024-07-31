@@ -1,7 +1,7 @@
 @extends('guest.main')
 
 @section('css')
-<link rel="stylesheet" href="{{asset('css/inovasisimprokum.css')}}">
+<link rel="stylesheet" href="{{asset('css/guest/inovasisimprokum.css')}}">
 @endsection
 
 @section('content')

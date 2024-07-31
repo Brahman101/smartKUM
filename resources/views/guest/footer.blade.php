@@ -1,5 +1,5 @@
 <!-- Footer -->
-<link rel="stylesheet" href="{{asset('css/footer.css')}}">
+<link rel="stylesheet" href="{{asset('css/guest/footer.css')}}">
 <footer class="custom-footer text-center">
     <div class="container">
         <div class="row">

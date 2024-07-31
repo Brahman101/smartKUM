@@ -10,7 +10,7 @@ body {
 .outer-container {
     min-height: 100vh;
     padding: 15px;
-    background-image: url("../img/bg/Pemkot_Batu_Edit.jpg");
+    background-image: url("/img/bg/Pemkot_Batu_Edit.jpg");
     background-size: cover;
     backdrop-filter: blur(10px);
     position: relative;
@@ -37,7 +37,7 @@ body {
 }
 
 .table-header img.logo-table {
-    max-width: 150px;
+    width: 30%;
     height: auto;
     margin-bottom: 10px;
 }
