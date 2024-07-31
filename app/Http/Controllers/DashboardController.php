@@ -26,53 +26,54 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
-        if (Auth::user()->role->role == '-'){
+    public function index()
+    {
+        if (Auth::user()->role->role == '-') {
             return view('auth.newuser.dashboard');
-        } else if(Auth::user()->role->role == 'superadmin') {
+        } else if (Auth::user()->role->role == 'superadmin') {
             return view('auth.pages.dashboard', [
                 'users' => User::all(),
                 'dinas' => Dinas::all(),
                 'draft' => Draft::all(),
                 'jenis' => Jenis::all(),
             ]);
-        } else if(Auth::user()->role->role == 'skpd'){
+        } else if (Auth::user()->role->role == 'skpd') {
             return view('auth.skpd.dashboard', [
                 'drafts' => Draft::all(),
             ]);
-        } else if(Auth::user()->role->role == 'admin_fo'){
+        } else if (Auth::user()->role->role == 'admin_fo') {
             return view('auth.admin_fo.dashboard', [
                 'admins' => Admin::all(),
             ]);
-        } else if(Auth::user()->role->role == 'staff_perundang_undangan'){
+        } else if (Auth::user()->role->role == 'staff_perundang_undangan') {
             return view('auth.staff_perundang_undangan.dashboard', [
                 'staff_undangs' => StaffUndang::all(),
             ]);
-        } else if(Auth::user()->role->role == 'kasubag_perundang_undangan'){
+        } else if (Auth::user()->role->role == 'kasubag_perundang_undangan') {
             return view('auth.kasubag_perundang_undangan.dashboard', [
                 'kasubag_undangs' => KasubagUndang::all(),
             ]);
-        } else if(Auth::user()->role->role == 'kabag'){
+        } else if (Auth::user()->role->role == 'kabag') {
             return view('auth.kabag.dashboard', [
                 'kabag' => Kabag::all(),
             ]);
-        } else if(Auth::user()->role->role == 'kepala_dinas'){
+        } else if (Auth::user()->role->role == 'kepala_dinas') {
             return view('auth.kepala_dinas.dashboard', [
                 'kepala_dinas' => KepalaDinas::all(),
             ]);
-        } else if(Auth::user()->role->role == 'sekda'){
+        } else if (Auth::user()->role->role == 'sekda') {
             return view('auth.sekda.dashboard', [
                 'sekda' => Sekda::all(),
             ]);
-        } else if(Auth::user()->role->role == 'walikota'){
+        } else if (Auth::user()->role->role == 'walikota') {
             return view('auth.walikota.dashboard', [
                 'walikota' => Walikota::all(),
             ]);
-        } else if(Auth::user()->role->role == 'staff_dokumentasi'){
+        } else if (Auth::user()->role->role == 'staff_dokumentasi') {
             return view('auth.staff_dokumentasi.dashboard', [
                 'staff_dokumentasi' => StaffDokumentasi::all(),
             ]);
-        } else if(Auth::user()->role->role == 'kasubag_dokumentasi'){
+        } else if (Auth::user()->role->role == 'kasubag_dokumentasi') {
             return view('auth.kasubag_dokumentasi.dashboard', [
                 'produk_hukums' => ProdukHukum::all(),
             ]);
@@ -85,14 +86,16 @@ class DashboardController extends Controller
         }
     }
 
-    public function profile() {
+    public function profile()
+    {
         return view('auth.pages.profile', [
             'user' => Auth::user(),
             'dinas' => Dinas::all()
         ]);
     }
 
-    public function editProfile(Request $request, User $user){
+    public function editProfile(Request $request, User $user)
+    {
         $validate = [[
             'name' => 'required',
             'password' => 'required|min:6',
@@ -105,7 +108,7 @@ class DashboardController extends Controller
             'confirmPassword.same' => 'Konfirmasi password tidak sama',
         ]];
 
-        if($request->email == $user->email){
+        if ($request->email == $user->email) {
             $validate = [[
                 'email' => 'required|email:dns|unique:users,email'
             ], [
@@ -114,8 +117,8 @@ class DashboardController extends Controller
                 'email.unique' => 'Email sudah terdaftar'
             ]];
         }
-        
-        if($request->nip == $user->nip){
+
+        if ($request->nip == $user->nip) {
             $validate = [[
                 'nip' => 'required|unique:users,nip'
             ], [
@@ -127,7 +130,7 @@ class DashboardController extends Controller
         $validateData = $request->validate($validate[0], $validate[1]);
 
         User::where('id', $request->id)
-            -> update([
+            ->update([
                 'name' => $request->name,
                 'email' => $request->email,
                 'nip' => $request->nip,
@@ -135,19 +138,27 @@ class DashboardController extends Controller
                 'dinas_id' => $request->dinas_id
             ]);
 
-        $request->session()->flash('success', 'Data user berhasil diubah');
-    
+
         return redirect('/dashboard/profile');
     }
 
-    public function dashboard() {
+    public function dashboard()
+    {
         return view('guest.dashboard', [
             'draft' => ProdukHukum::all(),
         ]);
     }
 
-    public function readprodukhukum(Request $request, ProdukHukum $draft){
-        return view('guest.readprodukhukum',[
+    public function inovasiSimprokum()
+    {
+        // Add any necessary logic here
+        return view('guest.inovasisimprokum');
+    }
+
+
+    public function readprodukhukum(Request $request, ProdukHukum $draft)
+    {
+        return view('guest.readprodukhukum', [
             'draft' => $draft::find($request->id),
         ]);
     }

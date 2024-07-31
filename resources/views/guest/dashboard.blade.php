@@ -1,11 +1,11 @@
 @extends('guest.main')
 
-<!-- @section('css')
-<link rel="stylesheet" type="text/css" href="{{ asset('/css/login.css') }}">
-@endsection -->
+@section('css')
+<!-- <link rel="stylesheet" type="text/css" href="{{ asset('/css/login.css') }}"> -->
+<link rel="stylesheet" href="{{asset('css/dashboard2.css')}}">
+@endsection
 
 @section('content')
-<link rel="stylesheet" href="{{asset('css/dashboard2.css')}}">
 <section>
   <div class="outer-container d-flex align-items-center justify-content-center">
     <div class="inner-container">
@@ -43,7 +43,7 @@
               <td>{{date('d-m-Y', strtotime($draft->tanggal_pengundangan))}}</td>
               <td>
                 <div class="mx-auto">
-                  <a href="/dashboard/readprodukhukum/{{$draft->id}}" class="badge bg-primary border-0 text-decoration-none">Lihat</a>
+                  <a href="/dashboard/readprodukhukum/{{$draft->id}}" class="badge">Lihat</a>
                 </div>
               </td>
             </tr>

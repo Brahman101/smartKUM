@@ -35,6 +35,9 @@ Route::get('/', function () {
 Route::get('/beranda', [DashboardController::class, 'dashboard'])->middleware('guest');
 Route::get('/dashboard/readprodukhukum/{id}', [DashboardController::class, 'readprodukhukum'])->middleware('guest');
 
+Route::get('/inovasisimprokum', [DashboardController::class, 'inovasisimprokum'])->middleware('guest');
+
+
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 

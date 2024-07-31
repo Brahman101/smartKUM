@@ -34,10 +34,7 @@
 			<a class="nav-link" href="https://jdih.batukota.go.id/">JDIH Kota Batu</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Inovasi SIMPROKUM</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Tutorial SIMPROKUM</a>
+			<a class="nav-link" href="/inovasisimprokum">Inovasi SIMPROKUM</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="/status">Status</a>
