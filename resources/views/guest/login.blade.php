@@ -5,10 +5,9 @@
 @endsection
 
 @section('content')
-<div class="container">
+<div class="background">
   <div class="row mt-5">
-    <div class="col-10 col-sm-8 col-md-8 col-lg-4 mx-auto position-relative">
-
+    <div class="box-login col-10 col-sm-8 col-md-8 col-lg-4 mx-auto position-relative">
       @if(session()->has('success'))
       <div class="alert alert-success alert-dismissible fade show" role="alert">
         {{ session()->get('success') }}
@@ -52,7 +51,7 @@
           </div>
 
           <div class="text-center mt-5 d-grid gap-2">
-            <button class="btn btn-warning rounded-pill text-white fw-bold px-4" type="submit">sign in</button>
+            <button class="btn-submit" type="submit">sign in</button>
             <div class="mt-3">
             </div>
           </div>

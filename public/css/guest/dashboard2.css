@@ -10,7 +10,7 @@ body {
 .outer-container {
     min-height: 100vh;
     padding: 15px;
-    background-image: url("/img/bg/Pemkot_Batu_Edit.jpg");
+    background-image: url("/img/bg/bg_login.png");
     background-size: cover;
     backdrop-filter: blur(10px);
     position: relative;
@@ -120,4 +120,13 @@ body {
     #tableKasubagDokumentasi {
         font-size: 0.8rem;
     }
+}
+
+.table-responsive {
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
 }

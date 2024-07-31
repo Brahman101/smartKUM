@@ -91,8 +91,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <a href="{{ asset('storage/' . $draft->ttd_walikota_salinan )}}" class="ms-2 " style="vertical-align: -webkit-baseline-middle">Download</a>
+                                <div class="row-button-action">
+                                    <div class="row">
+                                        <a href="{{ asset('storage/' . $draft->ttd_walikota_salinan )}}" class="button-action" style="vertical-align: -webkit-baseline-middle">Abstrak</a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="{{ asset('storage/' . $draft->ttd_walikota_salinan )}}" class="button-action" style="vertical-align: -webkit-baseline-middle">Unduh</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

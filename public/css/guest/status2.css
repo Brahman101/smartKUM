@@ -6,6 +6,8 @@
 .status-container {
     max-width: 800px;
     padding: 20px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .status-inner {
@@ -101,4 +103,11 @@
 
 .trayek-details {
     font-size: 0.85rem;
+}
+
+.background {
+    background-image: url('/img/bg/bg_login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

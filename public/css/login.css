@@ -1,10 +1,27 @@
 body {
-    background: white;
     font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
 
-.rounded {
-    border-radius: 15px !important;
+.background {
+    background-image: url('/img/bg/bg_login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-login {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.314);
+}
+
+.p text-center {
+    font-size: 20px;
 }
 
 .rounded input select {
@@ -51,4 +68,17 @@ body {
 
 .register-page {
     margin-top: 10%;
+}
+
+.btn-submit {
+    background-color: #488b8f;
+    border: 1px solid #488b8f;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
 }

@@ -11,7 +11,7 @@
     <div class="inner-container">
       <div class="table-header d-flex flex-row align-items-center justify-content-between">
         <img src="{{asset('img\bg/logo_jdih.png')}}" alt="logo_jdih" class="logo-table">
-        <h3>Daftar Katalog Produk Hukum Kota Batu</h3>
+        <h3 style="color: #787878; font-weight: bold;">Daftar Katalog Produk Hukum Kota Batu</h3>
       </div>
       <div class="table-responsive">
         <table class="table" id="tableKasubagDokumentasi">
