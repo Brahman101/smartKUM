@@ -87,6 +87,12 @@ body {
     background-color: #488b8f;
 }
 
+.badge:hover {
+    background-color: #488b8f;
+    color: white;
+    text-decoration: none;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .inner-container {

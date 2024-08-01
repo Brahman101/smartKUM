@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="/css/auth/sidebar2.css">
+</head>
+
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
     <div class="position-sticky pt-3 sidebar-sticky">
         <ul class="nav flex-column">
@@ -31,7 +35,7 @@
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('dashboard/katalogprodukhukum') ? 'active' : '' }}" aria-current="page" href="/dashboard/katalogprodukhukum">
                     <span class="align-text-bottom"><i class="fa-solid fa-table-columns"></i></span>
-                    Katalog Produk Hukum 
+                    Katalog Produk Hukum
                 </a>
             </li>
             <li class="nav-item">
@@ -91,10 +95,10 @@
                     <div class="nav-link">
                         <strong>Username:</strong>
                         <p>{{Auth::user()->name}}</p>
-                        
+
                         <strong>Role:</strong>
                         <p>{{Auth::user()->role->role}}</p>
-                        
+
                         <strong>Dinas:</strong>
                         <p>{{Auth::user()->dinas->dinas}}</p>
                     </div>

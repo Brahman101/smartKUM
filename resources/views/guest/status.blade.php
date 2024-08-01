@@ -42,12 +42,12 @@
                         </div>
 
                         <div class="text-center mt-5">
-                            <button class="btn btn-info rounded-pill text-white fw-bold px-4" type="submit">Cari</button>
+                            <button class="btn-submit" type="submit">Cari</button>
                         </div>
 
                         @if(isset($draft))
                         <div class="text-center mt-3">
-                            <button class="btn btn-warning rounded-pill text-white fw-bold px-4" type="button" data-bs-toggle="modal" data-bs-target="#trayek{{$draft->id}}">
+                            <button class="btn-trayek" type="button" data-bs-toggle="modal" data-bs-target="#trayek{{$draft->id}}">
                                 Trayek
                             </button>
                         </div>

@@ -111,3 +111,21 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.btn-submit {
+    background-color: #488b8f;
+    border: 1px solid #488b8f;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    width: 50%;
+}
+
+.btn-trayek {
+    background-color: #488b8f;
+    border: 1px solid #488b8f;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    width: 50%;
+}

@@ -1,4 +1,8 @@
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+<head>
+    <link rel="stylesheet" href="/css/auth/header2.css">
+</head>
+
+<header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow" style="background-color: #488b8f;">
     <a class="navbar-brand logo col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">SmartKUM</a>
     <!-- <button class="navbar-toggler position-absolute d-md-none collapsed me-5" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -7,10 +11,10 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <!-- <input class="form-control form-control-dark rounded-3 border-1 search-bar" type="text" placeholder="Search" aria-label="Search"> -->
-    
+
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            
+
         </div>
         <div class="offcanvas-body">
             <ul class="nav flex-column">
@@ -83,10 +87,10 @@
                         <div class="nav-link">
                             <strong>Username:</strong>
                             <p>{{Auth::user()->name}}</p>
-                            
+
                             <strong>Role:</strong>
                             <p>{{Auth::user()->role->role}}</p>
-                            
+
                             <strong>Dinas:</strong>
                             <p>{{Auth::user()->dinas->dinas}}</p>
                         </div>
@@ -97,10 +101,10 @@
     </div>
     <div class="navbar-nav">
         <div class="nav-item text-nowrap">
-        <form action="/logout" method="post">
-            @csrf
-            <button type="submit" class="nav-link px-3 rounded-3 border-0 btn-logout">Logout</button>
-        </form>
+            <form action="/logout" method="post">
+                @csrf
+                <button type="submit" class="btn-logout nav-link px-3 rounded-3 border-0 btn-logout" style="color: #488b8f;">Logout</button>
+            </form>
         </div>
     </div>
 </header>
