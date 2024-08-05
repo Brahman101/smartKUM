@@ -27,10 +27,10 @@ use App\Models\ProdukHukum;
 */
 
 Route::get('/', function () {
-    return view('guest.dashboard', [
-        'draft' => ProdukHukum::all(),
-    ]);
-})->middleware('guest');
+    return view('JDIH.beranda');
+})->middleware('guest')->name('beranda');
+
+
 
 Route::get('/beranda', [DashboardController::class, 'dashboard'])->middleware('guest');
 Route::get('/dashboard/readprodukhukum/{id}', [DashboardController::class, 'readprodukhukum'])->middleware('guest');
