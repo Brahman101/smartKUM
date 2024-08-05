@@ -30,6 +30,13 @@ Route::get('/', function () {
     return view('JDIH.beranda');
 })->middleware('guest')->name('beranda');
 
+Route::get('/kontak', function () {
+    return view('JDIH.kontak');
+})->middleware('guest')->name('kontak');
+
+Route::get('/faq', function () {
+    return view('JDIH.FAQ');
+})->middleware('guest')->name('faq');
 
 
 Route::get('/beranda', [DashboardController::class, 'dashboard'])->middleware('guest');
