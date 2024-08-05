@@ -4,7 +4,7 @@
 		<!-- Top Details-->
 		<nav class="navbar navbar-expand-lg navbar-kesatu">
 			<div class="container-navbar d-flex flex-row align-items-center justify-content-start">
-				<img src="{{ asset('img\bg/LogoKotaBatu.png') }}" alt="Logo Kota Batu" class="logo-batu">
+				<a href="/"><img src="{{ asset('img\bg/LogoKotaBatu.png') }}" alt="Logo Kota Batu" class="logo-batu"></a>
 				<img src="{{ asset('img\bg/ikon_bangunan.png') }}" alt="Alamat" class="ikon-topnav">
 				<p>Bagian Hukum Setda. Kota Wisata Batu</p>
 				<img src="{{ asset('img\bg/ikon_mail.png') }}" alt="E-mail" class="ikon-topnav">
@@ -28,7 +28,7 @@
 <nav id="navbar" class="navbar navbar-kedua justify-content-center align-items-start">
 	<ul class="navbar-nav d-flex flex-row ">
 		<li class="nav-item">
-			<a class="nav-link" href="/">Beranda</a>
+			<a class="nav-link" href="/beranda">Beranda</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="https://jdih.batukota.go.id/">JDIH Kota Batu</a>

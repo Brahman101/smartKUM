@@ -38,6 +38,13 @@ Route::get('/faq', function () {
     return view('JDIH.FAQ');
 })->middleware('guest')->name('faq');
 
+Route::get('/media1', function () {
+    return view('JDIH.media1');
+})->middleware('guest')->name('media1');
+
+Route::get('/media2', function () {
+    return view('JDIH.media2');
+})->middleware('guest')->name('media2');
 
 Route::get('/beranda', [DashboardController::class, 'dashboard'])->middleware('guest');
 Route::get('/dashboard/readprodukhukum/{id}', [DashboardController::class, 'readprodukhukum'])->middleware('guest');

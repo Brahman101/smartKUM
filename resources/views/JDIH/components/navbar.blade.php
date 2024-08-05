@@ -2,7 +2,7 @@
     <!-- Top Details-->
     <nav class="navbar navbar-expand-lg navbar-kesatu section-to-hide">
         <div class="container-navbar">
-            <img src="{{ asset('/img/bg//LogoKotaBatu.png') }}" alt="Logo Kota Batu" class="logo-batu">
+            <a href="/"><img src="{{ asset('img\bg/LogoKotaBatu.png') }}" alt="Logo Kota Batu" class="logo-batu"></a>
             <img src="{{ asset('/img/bg//ikon_bangunan.png') }}" alt="Alamat" class="ikon-topnav">
             <p>Bagian Hukum Setda. Kota Wisata Batu</p>
             <img src="{{ asset('/img/bg//ikon_mail.png') }}" alt="E-mail" class="ikon-topnav">
@@ -92,8 +92,8 @@
                         Media
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="#">Media 1</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="#">Media 2</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('media1') }}">Media 1</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('media2') }}">Media 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
