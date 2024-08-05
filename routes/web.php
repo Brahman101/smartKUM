@@ -46,6 +46,10 @@ Route::get('/media2', function () {
     return view('JDIH.media2');
 })->middleware('guest')->name('media2');
 
+Route::get('/sop', function () {
+    return view('JDIH.sop');
+})->middleware('guest')->name('sop');
+
 Route::get('/beranda', [DashboardController::class, 'dashboard'])->middleware('guest');
 Route::get('/dashboard/readprodukhukum/{id}', [DashboardController::class, 'readprodukhukum'])->middleware('guest');
 
