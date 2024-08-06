@@ -1,0 +1,21 @@
+.img-law{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.img-law img{
+    width: 80%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+h2{
+    padding-left: 80px;
+}
+
+.container{
+    margin: 60px;
+}

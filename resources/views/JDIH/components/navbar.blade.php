@@ -75,7 +75,10 @@
                         Profil
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="#">-</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="#">Struktur Organisasi</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="#">Tim Pengelola</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="#">Dasar Hukum</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('sop') }}">SOP</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">

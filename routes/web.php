@@ -47,6 +47,10 @@ Route::get('/media2', function () {
     return view('JDIH.media2');
 })->middleware('guest')->name('media2');
 
+Route::get('/sop', function () {
+    return view('JDIH.sop');
+})->middleware('guest')->name('sop');
+
 Route::get('/beranda', function () {
     return view('JDIH.beranda');
 })->middleware('guest')->name('beranda');
