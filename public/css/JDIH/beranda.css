@@ -289,6 +289,7 @@ p {
     padding: 20px;
     background-color: #488b8f;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .new-rules h5,
@@ -318,6 +319,7 @@ p {
     padding: 1rem;
     margin-bottom: 2rem;
     border: 1px solid #ddd;
+    width: 100%;
     border-radius: 8px;
     background-color: #fff;
     text-decoration: none; /* Remove underline from link */
@@ -345,6 +347,7 @@ p {
 .information h5 {
     margin-top: 0;
     margin-bottom: 16px;
+    text-align: start;
 }
 
 .information p {
@@ -402,14 +405,27 @@ p {
 
 @media (max-width: 768px) {
     .col {
-        width: 80%;
+        width: 100%;
+    }
+    .new-rules {
+        width: 100%;
     }
     .new-rules h3 {
         font-size: 1.2rem;
     }
 
+    .new-rules p {
+        font-size: small;
+    }
+
+    .new-rules h5 {
+        font-size: 1rem;
+    }
     .new-rules .custom-btn-more {
         width: 90%;
+    }
+    .new-rules .container {
+        width: 100%;
     }
 }
 

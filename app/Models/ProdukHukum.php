@@ -9,15 +9,6 @@ class ProdukHukum extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'no_tahun',
-        'tentang',
-        'subjek',
-        'status',
-        'tanggal_pengundangan',
-    ];
-
-    public function staffDokumentasi(){
-        return $this->belongsTo(StaffDokumentasi::class);
-    }
+    protected $table = 'produk_hukums';
+    protected $fillable = ['judul', 'tanggal_pengundangan', 'status_dokumen', 'jenis', 'abstrak', 'jumlah_dilihat', 'jumlah_diunduh', 'file_path', 'file_name'];
 }

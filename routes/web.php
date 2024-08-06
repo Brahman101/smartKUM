@@ -11,6 +11,7 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\KasubagController;
 use App\Http\Controllers\KabagController;
 use App\Http\Controllers\KepalaDinasController;
+use App\Http\Controllers\NewestRulesController;
 use App\Http\Controllers\SekdaController;
 use App\Http\Controllers\WalikotaController;
 use App\Models\ProdukHukum;
@@ -46,7 +47,19 @@ Route::get('/media2', function () {
     return view('JDIH.media2');
 })->middleware('guest')->name('media2');
 
-Route::get('/beranda', [DashboardController::class, 'dashboard'])->middleware('guest');
+Route::get('/beranda', function () {
+    return view('JDIH.beranda');
+})->middleware('guest')->name('beranda');
+
+Route::get('/simprokum', function () {
+    return view('simprokum');
+})->name('simprokum');
+
+Route::get('/beranda', [NewestRulesController::class, 'beranda'])->middleware('guest');
+
+Route::get('/simprokum', [DashboardController::class, 'dashboard'])->middleware('guest');
+
+// Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware('guest');
 Route::get('/dashboard/readprodukhukum/{id}', [DashboardController::class, 'readprodukhukum'])->middleware('guest');
 
 Route::get('/inovasisimprokum', [DashboardController::class, 'inovasisimprokum'])->middleware('guest');
