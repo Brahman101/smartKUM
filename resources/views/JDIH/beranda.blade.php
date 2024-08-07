@@ -169,7 +169,7 @@
         <!-- Document Quantity Chart Here! -->
         <!-- <section class="doc-chart">
 
-                                                                            </section> -->
+                                                                                </section> -->
         <!-- News & Activity -->
         {{-- <section class="news-activity d-flex align-items-center justify-content-center">
         <div class="container d-flex flex-column align-items-center">
@@ -265,5 +265,5 @@
 @endsection
 
 @section('js')
-    <script src="{{ asset('js/newhome.js') }}"></script>
+    <script src="{{ asset('js/beranda.js') }}"></script>
 @endsection

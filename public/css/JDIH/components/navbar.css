@@ -169,6 +169,7 @@
 .nav-item {
     transition: all 0.3s ease;
     margin: 0 10px;
+    border-radius: 6px;
 }
 
 .nav-item:hover {

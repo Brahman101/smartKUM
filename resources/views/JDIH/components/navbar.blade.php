@@ -17,10 +17,10 @@
         <div class="container logo-title">
             <div class="row justify-content-center logo">
                 <div class="col-auto">
-                    <img src="{{'/img/bg//LogoJDIH.png'}}" alt="Logo JDIH" class="logo-container-dua">
+                    <img src="{{ '/img/bg//LogoJDIH.png' }}" alt="Logo JDIH" class="logo-container-dua">
                 </div>
                 <div class="col-auto">
-                    <img src="{{'/img/bg//LogoKotaBatu.png'}}" alt="Logo Kota Batu" class="logo-container-dua">
+                    <img src="{{ '/img/bg//LogoKotaBatu.png' }}" alt="Logo Kota Batu" class="logo-container-dua">
                 </div>
             </div>
             <div class="text-center title">
@@ -34,7 +34,7 @@
     </header>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+    <nav class="navbar navbar-expand justify-content-center">
         <button class="navbar-toggler" onclick="toggleNavbar()">
             <i class="fas fa-bars"></i> Menu
         </button>
@@ -49,7 +49,8 @@
                         Produk Hukum
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="#">Peraturan Perundang-Undangan</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="#">Peraturan Perundang-Undangan</a>
+                        </li>
                         <li><a class="dropdown-item item-navbar-kedua" href="#">Monografi Hukum</a></li>
                         <li><a class="dropdown-item item-navbar-kedua" href="#">Artikel Hukum</a></li>
                         <li><a class="dropdown-item item-navbar-kedua" href="#">Putusan Pengadilan</a></li>
@@ -59,7 +60,8 @@
                     <a class="nav-link" href="#">Berita</a>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Statistik
                     </a>
                     <ul class="dropdown-menu">
@@ -71,7 +73,8 @@
                     <a class="nav-link" href="#">Forum</a>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Profil
                     </a>
                     <ul class="dropdown-menu">
@@ -82,7 +85,8 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Informasi Hukum
                     </a>
                     <ul class="dropdown-menu">
@@ -91,7 +95,8 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Media
                     </a>
                     <ul class="dropdown-menu">
