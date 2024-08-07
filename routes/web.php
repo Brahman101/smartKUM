@@ -36,6 +36,10 @@ Route::get('/artikelhukum', function () {
     return view('JDIH.artikelhukum');
 })->middleware('guest')->name('artikelhukum');
 
+Route::get('/detailartikel', function () {
+    return view('JDIH.detailartikel');
+})->middleware('guest')->name('detailartikel');
+
 Route::get('/kontak', function () {
     return view('JDIH.kontak');
 })->middleware('guest')->name('kontak');
