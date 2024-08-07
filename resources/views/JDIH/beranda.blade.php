@@ -10,7 +10,8 @@
     <div class="container">
         <!-- Search Bar -->
         <section class="search-column d-flex flex-column align-items-center justify-content-center">
-            <form class="search-column-form w-100 justify-content-center align-items-center" action="">
+            <form class="search-column-form w-100 justify-content-center align-items-center" method="GET"
+                action="{{ route('cari.produk.hukum') }}">
                 <div class="bagian-satu text-center">
                     <h3 class="exc-search-column">Cari Produk Hukum</h3>
                     <input type="text" class="form-control justify-content-center" id="cariKeyword"
@@ -148,11 +149,11 @@
                                 <p class="p-new-rules">{{ $item->tanggal_pengundangan }}</p>
                                 <div class="seen-counter">
                                     <i class="fas fa-eye"></i>
-                                    {{-- <p class="p-new-rules">{{ $item->jumlah_dilihat }}</p> --}}
+                                    <p class="p-new-rules">{{ $item->jumlah_dilihat }}</p>
                                 </div>
                                 <div class="download-counter">
                                     <i class="fas fa-download"></i>
-                                    {{-- <p class="p-new-rules">{{ $item->jumlah_diunduh }}</p> --}}
+                                    <p class="p-new-rules">{{ $item->jumlah_diunduh }}</p>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +170,7 @@
         <!-- Document Quantity Chart Here! -->
         <!-- <section class="doc-chart">
 
-                                                                                </section> -->
+                                                                                                </section> -->
         <!-- News & Activity -->
         {{-- <section class="news-activity d-flex align-items-center justify-content-center">
         <div class="container d-flex flex-column align-items-center">

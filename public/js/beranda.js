@@ -63,3 +63,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+$(document).ready(function () {
+    $(".custom-btn-cari").click(function (e) {
+        e.preventDefault();
+
+        var keyword = $("#cariKeyword").val();
+        var tipeDokumen = $(".item-tipe-dokumen.active").data("value");
+        var jenisDokumen = $(".item-jenis-dokumen.active").data("value");
+        var tahun = $("#cariTahun").val();
+        var nomor = $("#cariNomor").val();
+        var status = $(".item-status.active").data("value");
+
+        var url = "{{ route('cari.produk.hukum') }}";
+
+        url += "?cariKeyword=" + keyword;
+        url += "&tipeDokumen=" + tipeDokumen;
+        url += "&jenisDokumen=" + jenisDokumen;
+        url += "&cariTahun=" + tahun;
+        url += "&cariNomor=" + nomor;
+        url += "&status=" + status;
+
+        window.location.href = url;
+    });
+});

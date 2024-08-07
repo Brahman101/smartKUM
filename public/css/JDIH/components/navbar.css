@@ -109,6 +109,7 @@
 /* Navbar */
 .navbar {
     border-top: 2px solid #488b8f;
+    border-bottom: 2px solid #488b8f;
 }
 .nav-item.dropdown.dropdown-navbar-kedua {
     position: relative;
