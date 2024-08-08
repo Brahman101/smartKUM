@@ -28,9 +28,7 @@ use App\Http\Controllers\ProdukHukumController;
 |
 */
 
-Route::get('/', function () {
-    return view('JDIH.beranda');
-})->middleware('guest')->name('beranda');
+
 
 Route::get('/artikelhukum', function () {
     return view('JDIH.artikelhukum');
