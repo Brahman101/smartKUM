@@ -7,7 +7,6 @@
 .img-law img{
     width: 80%;
     height:50%;
-    display: flex;
     justify-content: center;
     align-self: center;
     margin-bottom: 24px;
@@ -22,9 +21,9 @@ h2{
     margin: 60px;
 }
 
-a{
+.text{
     text-decoration: none;
     color: black;
-    margin-left: 80px;
     font-size: 18px auto;
+    margin-left: 80px;
 }

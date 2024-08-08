@@ -12,10 +12,10 @@
         <div class="img-law">
             <img src="{{ asset('/img/bg/law.png') }}" alt="sop">
         </div>
-        <a href="https://jdih.batukota.go.id/2024/06/04/sop-pengajuan-produk-hukum/">1. SOP Pengajuan Produk Hukum</a><br>
-        <a href="https://jdih.batukota.go.id/2024/06/04/sop-dokumentasi-dan-pendataan-kearsipan/">2. SOP Dokumentasi dan Pendataan Kearsipan</a><br>
-        <a href="https://jdih.batukota.go.id/2024/06/04/sop-bantuan-hukum/">3. SOP Bantuan Hukum</a><br>
-        <a href="https://jdih.batukota.go.id/2024/06/04/sop-jdih-kota-batu/">4. SOP JDIH Kota Batu</a>
+        <a class="text" href="https://jdih.batukota.go.id/2024/06/04/sop-pengajuan-produk-hukum/">1. SOP Pengajuan Produk Hukum</a><br>
+        <a class="text" href="https://jdih.batukota.go.id/2024/06/04/sop-dokumentasi-dan-pendataan-kearsipan/">2. SOP Dokumentasi dan Pendataan Kearsipan</a><br>
+        <a class="text" href="https://jdih.batukota.go.id/2024/06/04/sop-bantuan-hukum/">3. SOP Bantuan Hukum</a><br>
+        <a class="text" href="https://jdih.batukota.go.id/2024/06/04/sop-jdih-kota-batu/">4. SOP JDIH Kota Batu</a>
     </div>
 </div>
 @endsection
