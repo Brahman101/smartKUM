@@ -32,9 +32,25 @@ Route::get('/', function () {
     return view('JDIH.beranda');
 })->middleware('guest')->name('beranda');
 
+Route::get('/peraturanhukum', function () {
+    return view('JDIH.peraturanhukum');
+})->middleware('guest')->name('peraturanhukum');
+
 Route::get('/artikelhukum', function () {
     return view('JDIH.artikelhukum');
 })->middleware('guest')->name('artikelhukum');
+
+Route::get('/monografihukum', function () {
+    return view('JDIH.monografihukum');
+})->middleware('guest')->name('monografihukum');
+
+Route::get('/putusanpengadilan', function () {
+    return view('JDIH.putusanpengadilan');
+})->middleware('guest')->name('putusanpengadilan');
+
+Route::get('/detailperaturan', function () {
+    return view('JDIH.detailperaturan');
+})->middleware('guest')->name('detailperaturan');
 
 Route::get('/detailartikel', function () {
     return view('JDIH.detailartikel');
