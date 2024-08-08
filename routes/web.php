@@ -16,6 +16,7 @@ use App\Http\Controllers\SekdaController;
 use App\Http\Controllers\WalikotaController;
 use App\Models\ProdukHukum;
 use App\Http\Controllers\ProdukHukumController;
+use App\Http\Controllers\ProdukArtikelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -85,6 +86,9 @@ Route::get('/simprokum', function () {
 Route::get('/beranda', [NewestRulesController::class, 'beranda'])->middleware('guest')->name('beranda');
 
 Route::get('/cari-produk-hukum', [ProdukHukumController::class, 'cari'])->name('cari.produk.hukum');
+
+Route::get('/artikelhukum', [ProdukArtikelController::class, 'artikelHukum'])->name('artikelhukum');
+
 
 
 Route::get('/simprokum', [DashboardController::class, 'dashboard'])->middleware('guest');
