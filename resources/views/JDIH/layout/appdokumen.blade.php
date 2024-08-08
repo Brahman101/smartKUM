@@ -16,10 +16,13 @@
 
 <body>
     @include('JDIH.components.navbar')
+    <div class="container d-flex justify-content-start align-items-center">
+        <div class="content" style="justify-content: space-between; display: flex; flex-direction : row">
+            @yield('content')
 
-    @yield('content')
-
-    @include('JDIH.components.sidebar')
+            @include('JDIH.components.sidebar')
+        </div>
+    </div>
 
     @include('JDIH.components.footer')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
