@@ -2,7 +2,7 @@
 @section('title','Profil - JDIH Kota Batu')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/JDIH/sop.css') }}">
+<link rel="stylesheet" href="{{ asset('css/JDIH/profil.css') }}">
 @endsection
 
 @section('content')

@@ -3,9 +3,9 @@
 <body>
     <main class="main-content sidebar">
         <div class="sidebar>
-            <div class="side-search">
+            <div class=" side-search">
             <form class="search-form">
-                <h2>Cari Produk Hukum</h2>
+                <h1>Cari Produk Hukum</h1>
                 <label for="judul">Judul</label>
                 <input type="text" placeholder="Judul">
                 <label for="tipe_dokumen">Tipe Dokumen</label>
