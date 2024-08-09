@@ -109,4 +109,15 @@ class TipeDokumenController extends Controller
 
         return view('JDIH.putusanpengadilan', compact('putusanPengadilan'));
     }
+
+    private function formatHasilPencarian($item)
+    {
+        return [
+            'judul' => $item->judul,
+            'abstrak' => $item->abstrak,
+            'tanggal_pengundangan' => $item->tanggal_pengundangan,
+            'jumlah_dilihat' => $item->jumlah_dilihat,
+            'jumlah_diunduh' => $item->jumlah_diunduh
+        ];
+    }
 }

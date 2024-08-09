@@ -97,7 +97,7 @@ Route::get('/simprokum', function () {
 
 Route::get('/beranda', [NewestRulesController::class, 'beranda'])->middleware('guest')->name('beranda');
 
-Route::get('/cari-produk-hukum', [ProdukHukumController::class, 'cari'])->name('cari.produk.hukum');
+Route::get('/hasil-pencarian', [ProdukHukumController::class, 'cari'])->name('cari.produk.hukum');
 
 
 // Rute untuk produk hukum

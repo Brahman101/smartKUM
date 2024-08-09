@@ -15,6 +15,7 @@
                 <div class="bagian-satu text-center">
                     <h3 class="exc-search-column">Cari Produk Hukum</h3>
                     <input type="text" class="form-control justify-content-center" id="cariKeyword"
+                        name="keyword
                         placeholder="Judul Produk Hukum...">
                 </div>
                 <div class="d-flex flex-md-row justify-content-between bagian-dua">
@@ -170,7 +171,7 @@
         <!-- Document Quantity Chart Here! -->
         <!-- <section class="doc-chart">
 
-                                                                                                </section> -->
+                                                                                                    </section> -->
         <!-- News & Activity -->
         {{-- <section class="news-activity d-flex align-items-center justify-content-center">
         <div class="container d-flex flex-column align-items-center">
