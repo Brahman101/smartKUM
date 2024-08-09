@@ -9,7 +9,7 @@
     <div class="main-content">
         <div class="main">
             <div class="container">
-                <h2>Produk Hukum</h2>
+                <h2>Peraturan Perudang - undangan</h2>
                 @foreach ($produkHukum as $item)
                     @php
                         $abstrak_words = str_word_count($item->abstrak, 2);

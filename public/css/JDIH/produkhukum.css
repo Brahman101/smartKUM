@@ -33,6 +33,13 @@
     transition: background-color 1s ease, box-shadow 0.7s ease;
 }
 
+.new_rules-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+}
+
 .container .card-content {
     gap: 1rem;
 }
@@ -53,6 +60,10 @@ h2 {
 
 p {
     font-size: small;
+}
+
+.information {
+    text-align: start;
 }
 
 .pagination {

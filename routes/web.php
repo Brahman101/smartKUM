@@ -16,7 +16,7 @@ use App\Http\Controllers\SekdaController;
 use App\Http\Controllers\WalikotaController;
 use App\Models\ProdukHukum;
 use App\Http\Controllers\ProdukHukumController;
-use App\Http\Controllers\ProdukArtikelController;
+use App\Http\Controllers\TipeDokumenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +31,9 @@ use App\Http\Controllers\ProdukArtikelController;
 
 
 
-Route::get('/peraturanhukum', function () {
-    return view('JDIH.peraturanhukum');
-})->middleware('guest')->name('peraturanhukum');
+// Route::get('/produkhukum', function () {
+//     return view('JDIH.produkhukum');
+// })->middleware('guest')->name('produkhukum');
 
 Route::get('/artikelhukum', function () {
     return view('JDIH.artikelhukum');
@@ -109,9 +109,20 @@ Route::get('/simprokum', function () {
 
 Route::get('/beranda', [NewestRulesController::class, 'beranda'])->middleware('guest')->name('beranda');
 
-Route::get('/cari-produk-hukum', [ProdukHukumController::class, 'cari'])->name('cari.produk.hukum');
+Route::get('/hasil-pencarian', [ProdukHukumController::class, 'cari'])->name('cari.produk.hukum');
 
-Route::get('/artikelhukum', [ProdukArtikelController::class, 'artikelHukum'])->name('artikelhukum');
+
+// Rute untuk produk hukum
+Route::get('/produkhukum', [TipeDokumenController::class, 'produkHukum'])->name('produk-hukum');
+
+// Rute untuk artikel hukum
+Route::get('/artikel-hukum', [TipeDokumenController::class, 'artikelHukum'])->name('artikel-hukum');
+
+// Rute untuk monografi hukum
+Route::get('/monografi-hukum', [TipeDokumenController::class, 'monografiHukum'])->name('monografi-hukum');
+
+// Rute untuk putusan pengadilan
+Route::get('/putusan-pengadilan', [TipeDokumenController::class, 'putusanPengadilan'])->name('putusan-pengadilan');
 
 
 
