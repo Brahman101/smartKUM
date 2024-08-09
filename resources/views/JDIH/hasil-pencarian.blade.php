@@ -12,8 +12,9 @@
                 <h2>Hasil Pencarian</h2>
                 @foreach ($hasilPencarian as $item)
                     @php
-                        $abstrak_words = str_word_count($item->abstrak, 2);
-                        $abstrak_words = str_word_count($item['abstrak'], 2);
+                        $abstrak_singkat = str_word_count($item['abstrak'], 2);
+                        $abstrak_singkat = implode(' ', array_slice($abstrak_singkat, 0, 40)) . '...';
+
                     @endphp
                     <a href="#" class="custom-card new-rules-card align-items-center justify-content-center">
                         <div class="card-content d-flex flex-row align-items-center justify-content-between">
