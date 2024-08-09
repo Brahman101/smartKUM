@@ -49,10 +49,10 @@
                         Produk Hukum
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="/peraturanhukum">Peraturan Perundang-Undangan</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="/monografihukum">Monografi Hukum</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="/artikelhukum">Artikel Hukum</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="/putusanpengadilan">Putusan Pengadilan</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('peraturanhukum') }}">Peraturan Perundang-Undangan</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('monografihukum') }}">Monografi Hukum</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('artikelhukum') }}">Artikel Hukum</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('putusanpengadilan') }}">Putusan Pengadilan</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -68,7 +68,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Forum</a>
+                    <a class="nav-link" href="{{ route('forum') }}">Forum</a>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -86,8 +86,8 @@
                         Informasi Hukum
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="#">Ruang Unduh</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="#">Kamus Hukum</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="propemperda2023">Propemperda 2023</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="propemperda2024">Propemperda 2024</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">

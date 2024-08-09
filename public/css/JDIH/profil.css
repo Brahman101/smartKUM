@@ -5,7 +5,7 @@
 }
 
 .img-law img{
-    width: 80%;
+    width: 60%;
     height:50%;
     justify-content: center;
     align-self: center;
@@ -19,7 +19,7 @@
 }
 
 .img-struktur img{
-    width: 80%;
+    width: 60%;
     height:50%;
     justify-content: center;
     align-self: center;
@@ -33,7 +33,7 @@
 }
 
 .img-pengelola img{
-    width: 70%;
+    width: 60%;
     height:50%;
     justify-content: center;
     align-self: center;
@@ -41,7 +41,7 @@
 }
 
 h2{
-    padding-left: 10%;
+    margin-left: 15%;
     margin-bottom: 2%;
 }
 
@@ -54,5 +54,5 @@ h2{
     text-decoration: none;
     color: black;
     font-size: 18px auto;
-    margin-left: 80px;
+    margin-left: 10%;
 }

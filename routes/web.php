@@ -60,8 +60,16 @@ Route::get('/kontak', function () {
 })->middleware('guest')->name('kontak');
 
 Route::get('/faq', function () {
-    return view('JDIH.FAQ');
+    return view('JDIH.faq');
 })->middleware('guest')->name('faq');
+
+Route::get('/propemperda2024', function () {
+    return view('JDIH.propemperda2024');
+})->middleware('guest')->name('propemperda2024');
+
+Route::get('/propemperda2023', function () {
+    return view('JDIH.propemperda2023');
+})->middleware('guest')->name('propemperda2023');
 
 Route::get('/media1', function () {
     return view('JDIH.media1');
@@ -70,6 +78,10 @@ Route::get('/media1', function () {
 Route::get('/media2', function () {
     return view('JDIH.media2');
 })->middleware('guest')->name('media2');
+
+Route::get('/forum', function () {
+    return view('JDIH.forum');
+})->middleware('guest')->name('forum');
 
 Route::get('/strukturorganisasi', function () {
     return view('JDIH.strukturorganisasi');
