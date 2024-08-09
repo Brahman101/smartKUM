@@ -50,11 +50,13 @@
                         Produk Hukum
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="/peraturanhukum">Peraturan Perundang-Undangan</a>
+                        <li><a class="dropdown-item item-navbar-kedua" href="/produkhukum">Peraturan
+                                Perundang-Undangan</a>
                         </li>
                         <li><a class="dropdown-item item-navbar-kedua" href="/monografihukum">Monografi Hukum</a></li>
                         <li><a class="dropdown-item item-navbar-kedua" href="/artikelhukum">Artikel Hukum</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="/putusanpengadilan">Putusan Pengadilan</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="/putusanpengadilan">Putusan Pengadilan</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
