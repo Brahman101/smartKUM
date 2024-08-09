@@ -71,6 +71,18 @@ Route::get('/media2', function () {
     return view('JDIH.media2');
 })->middleware('guest')->name('media2');
 
+Route::get('/strukturorganisasi', function () {
+    return view('JDIH.strukturorganisasi');
+})->middleware('guest')->name('strukturorganisasi');
+
+Route::get('/timpengelola', function () {
+    return view('JDIH.timpengelola');
+})->middleware('guest')->name('timpengelola');
+
+Route::get('/dasarhukum', function () {
+    return view('JDIH.dasarhukum');
+})->middleware('guest')->name('dasarhukum');
+
 Route::get('/sop', function () {
     return view('JDIH.sop');
 })->middleware('guest')->name('sop');
