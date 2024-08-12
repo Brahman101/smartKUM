@@ -17,22 +17,35 @@ class TipeDokumenController extends Controller
 {
     public function produkHukum()
     {
-        $produkHukum = ProdukHukum::select('judul', 'tanggal_pengundangan', 'created_at', 'abstrak', 'jumlah_dilihat', 'jumlah_diunduh')
+        $produkHukum = DB::table('produk_hukums') // 3 Tabel lainnya bisa mengikuti ini. :)
+            ->select(
+                DB::raw("id as id"),
+                DB::raw("CAST(judul AS CHAR) as judul"),
+                DB::raw("CAST(tanggal_pengundangan AS CHAR) as tanggal_pengundangan"),
+                DB::raw("CAST(created_at AS CHAR) as created_at"),
+                DB::raw("COALESCE(CAST(abstrak AS CHAR), '') as abstrak"),
+                DB::raw("CAST(jumlah_dilihat AS CHAR) as jumlah_dilihat"),
+                DB::raw("CAST(jumlah_diunduh AS CHAR) as jumlah_diunduh")
+            )
             ->orderBy('created_at', 'desc')
             ->paginate(5);
 
         if (!$produkHukum->isEmpty()) {
             $produkHukum->each(function ($item) {
-                $item->increment('jumlah_dilihat');
-                $item->increment('jumlah_diunduh');
-                $item->save();
+                DB::table('produk_hukums')
+                    ->where('id', $item->id)
+                    ->increment('jumlah_dilihat');
+
+                DB::table('produk_hukums')
+                    ->where('id', $item->id)
+                    ->increment('jumlah_diunduh');
             });
-        } else {
-            $produkHukum = collect();
         }
 
         return view('JDIH.produkhukum', compact('produkHukum'));
     }
+
+
     public function artikelHukum()
     {
         $artikelHukum = DB::table('artikel_hukums')

@@ -180,6 +180,19 @@
 .nav-item:hover .nav-link {
     color: #ffffff;
 }
+.nav-link.active {
+    font-weight: bold;
+    color: #488b8f !important;
+}
+
+.dropdown-item.active {
+    color: #488b8f !important;
+}
+
+/* .nav-item.dropdown .nav-link.active {
+    color: #ffffff;
+    background-color: #488b8f;
+} */
 
 @media (max-width: 768px) {
     .navbar-toggler {

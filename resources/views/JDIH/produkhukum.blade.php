@@ -15,7 +15,8 @@
                         $abstrak_words = str_word_count($item->abstrak, 2);
                         $abstrak_singkat = implode(' ', array_slice($abstrak_words, 0, 40)) . '...';
                     @endphp
-                    <a href="#" class="custom-card new-rules-card align-items-center justify-content-center">
+                    <a href="/dashboard/readprodukhukum/{{ $item->id }}"
+                        class="custom-card new-rules-card align-items-center justify-content-center">
                         <div class="card-content d-flex flex-row align-items-center justify-content-between">
                             <div class="information d-flex flex-column align-items-start justify-content-start">
                                 <h5>{{ $item->judul }}</h5>

@@ -9,5 +9,5 @@ class PutusanPengadilan extends Model
 {
     use HasFactory;
     protected $table = 'putusan_pengadilans';
-    protected $fillable = ['judul', 'tanggal_pengundangan', 'status_dokumen', 'jenis', 'abstrak', 'jumlah_dilihat', 'jumlah_diunduh', 'file_path', 'file_name'];
+    protected $fillable = ['id', 'judul', 'tanggal_pengundangan', 'status_dokumen', 'jenis', 'abstrak', 'jumlah_dilihat', 'jumlah_diunduh', 'file_path', 'file_name'];
 }

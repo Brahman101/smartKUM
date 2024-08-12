@@ -128,4 +128,19 @@
             navbar.classList.toggle("show");
         }
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentLocation = window.location.href;
+            const menuItems = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-item');
+            menuItems.forEach(item => {
+                if (item.href === currentLocation) {
+                    item.classList.add("active");
+                    if (item.classList.contains('dropdown-item')) {
+                        item.closest('.nav-item').querySelector('.nav-link').classList.add("active");
+                    }
+                }
+            });
+        });
+    </script>
+
     <script src="{{ asset('js/newhome.js') }}"></script>

@@ -145,7 +145,8 @@
                         $abstrak_words = str_word_count($item->abstrak, 2);
                         $abstrak_singkat = implode(' ', array_slice($abstrak_words, 0, 40)) . '...';
                     @endphp
-                    <a href="#" class="custom-card new-rules-card align-items-center justify-content-center">
+                    <a href="/dashboard/readprodukhukum/{{ $item->id }}"
+                        class="custom-card new-rules-card align-items-center justify-content-center">
                         <div class="card-content">
                             <div class="information d-flex flex-column align-items-start justify-content-center">
                                 <h5>{{ $item->judul }}</h5>
@@ -169,14 +170,14 @@
 
 
 
-                <button class="custom-btn-more">Lihat Semua</button>
+                <a href="\simprokum" class="custom-btn-more">Lihat Semua di SIMPROKUM</a>
             </div>
         </section>
 
         <!-- Document Quantity Chart Here! -->
         <!-- <section class="doc-chart">
 
-                                                                                                                            </section> -->
+                                                                                                                                                        </section> -->
         <!-- News & Activity -->
         {{-- <section class="news-activity d-flex align-items-center justify-content-center">
         <div class="container d-flex flex-column align-items-center">

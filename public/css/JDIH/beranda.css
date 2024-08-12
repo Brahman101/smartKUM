@@ -314,15 +314,15 @@ p {
 
 .new-rules .custom-card {
     display: flex;
-    align-items: flex-start; /* Align items to the top of the card */
-    justify-content: space-between; /* Spread out content horizontally */
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     margin-bottom: 2rem;
     border: 1px solid #ddd;
     width: 100%;
     border-radius: 8px;
     background-color: #fff;
-    text-decoration: none; /* Remove underline from link */
+    text-decoration: none;
     transition: background-color 1s ease, box-shadow 0.7s ease;
 }
 
@@ -336,12 +336,13 @@ p {
 .new-rules .card-content {
     display: flex;
     width: 100%;
-    justify-content: space-between; /* Align children to space out horizontally */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .information {
-    max-width: 60%; /* Adjust width as necessary */
-    margin-left: 1rem;
+    flex: 1;
+    padding-right: 1rem;
 }
 
 .information h5 {
@@ -361,11 +362,13 @@ p {
     flex-direction: column; /* Align items vertically */
     align-items: center; /* Align items to the right end */
     gap: 10px; /* Space between items */
+    justify-content: center;
 }
 
 .new-rules-details p {
     margin: 0;
     font-size: 0.875rem;
+    text-align: center;
     color: gray; /* Adjust font size as necessary */
 }
 
@@ -375,21 +378,26 @@ p {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    gap: 5px; /* Space between icon and text */
+    gap: 5px;
 }
 
 .new-rules-details i {
-    width: 30%; /* Adjust icon size */
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
     color: rgb(123, 123, 123);
 }
 
 .new-rules .custom-btn-more {
+    text-align: center;
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
     padding: 6px 12px;
     border: 1px solid white;
     border-radius: 8px;
     background-color: #488b8f;
+    text-decoration: none;
     color: white;
     width: 60%;
     max-width: 300px;
