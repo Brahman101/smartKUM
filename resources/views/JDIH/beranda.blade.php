@@ -14,8 +14,7 @@
                 action="{{ route('cari.produk.hukum') }}">
                 <div class="bagian-satu text-center">
                     <h3 class="exc-search-column">Cari Produk Hukum</h3>
-                    <input type="text" class="form-control justify-content-center" id="cariKeyword"
-                        name="keyword
+                    <input type="text" class="form-control justify-content-center" id="cariKeyword" name="keyword"
                         placeholder="Judul Produk Hukum...">
                 </div>
                 <div class="d-flex flex-md-row justify-content-between bagian-dua">
@@ -37,6 +36,7 @@
                                         data-value="Putusan Pengadilan">Putusan Pengadilan</a></li>
                             </ul>
                         </div>
+                        <input type="hidden" name="tipeDokumen" id="tipeDokumen">
                     </div>
                     <div class="bagian-dua-item text-center">
                         <h5 class="exc-search-column">Jenis Dokumen</h5>
@@ -54,16 +54,17 @@
                                         data-value="Peraturan Walikota">Peraturan Walikota</a></li>
                             </ul>
                         </div>
+                        <input type="hidden" name="jenisDokumen" id="jenisDokumen">
                     </div>
                 </div>
                 <div class="d-flex flex-md-row justify-content-between align-items-center bagian-tiga">
                     <div class="text-center flex-item">
                         <p class="exc-search-column">Tahun</p>
-                        <input type="text" class="form-control" id="cariTahun" placeholder="Tahun...">
+                        <input type="text" class="form-control" id="cariTahun" name="cariTahun" placeholder="Tahun...">
                     </div>
                     <div class="text-center flex-item">
                         <p class="exc-search-column">Nomor</p>
-                        <input type="text" class="form-control" id="cariNomor" placeholder="Nomor...">
+                        <input type="text" class="form-control" id="cariNomor" name="cariNomor" placeholder="Nomor...">
                     </div>
                     <div class="text-center flex-item">
                         <p class="exc-search-column">Status</p>
@@ -73,18 +74,22 @@
                                 - Status -
                             </button>
                             <ul class="dropdown-menu drop-status">
+                                <li><a class="dropdown-item item-status" href="#" data-value="">All Statuses</a></li>
                                 <li><a class="dropdown-item item-status" href="#" data-value="Berlaku">Berlaku</a>
                                 </li>
                                 <li><a class="dropdown-item item-status" href="#" data-value="Tidak Berlaku">Tidak
-                                        Berlaku</a></li>
+                                        Berlaku</a>
+                                </li>
                             </ul>
                         </div>
+                        <input type="hidden" name="status" id="status">
                     </div>
                 </div>
                 <div class="text-center">
                     <button type="submit" class="btn custom-btn-cari">Cari</button>
                 </div>
             </form>
+
         </section>
 
         <!-- Count of Documents -->
@@ -171,7 +176,7 @@
         <!-- Document Quantity Chart Here! -->
         <!-- <section class="doc-chart">
 
-                                                                                                    </section> -->
+                                                                                                                            </section> -->
         <!-- News & Activity -->
         {{-- <section class="news-activity d-flex align-items-center justify-content-center">
         <div class="container d-flex flex-column align-items-center">

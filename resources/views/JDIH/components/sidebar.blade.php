@@ -4,31 +4,31 @@
     <main class="main-content sidebar">
         <div class="sidebar>
             <div class=" side-search">
-            <form class="search-form">
+            <form class="search-form" action="{{ route('cari.produk.hukum') }}" method="GET">
                 <h1>Cari Produk Hukum</h1>
                 <label for="judul">Judul</label>
-                <input type="text" placeholder="Judul">
+                <input type="text" name="keyword" placeholder="Judul">
                 <label for="tipe_dokumen">Tipe Dokumen</label>
-                <select>
+                <select name="tipeDokumen">
                     <option value="">-Pilih Tipe Dokumen-</option>
-                    <option value="">Peraturan Wali Kota</option>
-                    <option value="">Peraturan Daerah</option>
+                    <option value="Peraturan Wali Kota">Peraturan Wali Kota</option>
+                    <option value="Peraturan Daerah">Peraturan Daerah</option>
                 </select>
                 <label for="jenis_dokumen">Jenis Dokumen</label>
-                <select>
+                <select name="jenisDokumen">
                     <option value="">-Pilih Jenis Dokumen-</option>
-                    <option value="">Peraturan Wali Kota</option>
-                    <option value="">Peraturan Daerah</option>
+                    <option value="Peraturan Wali Kota">Peraturan Wali Kota</option>
+                    <option value="Peraturan Daerah">Peraturan Daerah</option>
                 </select>
                 <label for="tahun">Tahun</label>
-                <input type="text" placeholder="Tahun">
+                <input type="text" name="cariTahun" placeholder="Tahun">
                 <label for="nomor">Nomor</label>
-                <input type="text" placeholder="Nomor">
+                <input type="text" name="cariNomor" placeholder="Nomor">
                 <label for="status">Status</label>
-                <select>
+                <select name="status">
                     <option value="">-Status-</option>
-                    <option value="">Berlaku</option>
-                    <option value="">Tidak Berlaku</option>
+                    <option value="Berlaku">Berlaku</option>
+                    <option value="Tidak Berlaku">Tidak Berlaku</option>
                 </select>
                 <button type="submit">Cari</button>
             </form>

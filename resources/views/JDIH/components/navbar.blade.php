@@ -2,7 +2,8 @@
     <!-- Top Details-->
     <nav class="navbar navbar-expand-lg navbar-kesatu section-to-hide">
         <div class="container-navbar">
-            <a href="{{ url('https://batukota.go.id/') }}"><img src="{{ asset('img\bg/LogoKotaBatu.png') }}" alt="Logo Kota Batu" class="logo-batu"></a>
+            <a href="{{ url('https://batukota.go.id/') }}"><img src="{{ asset('img\bg/LogoKotaBatu.png') }}"
+                    alt="Logo Kota Batu" class="logo-batu"></a>
             <img src="{{ asset('/img/bg//ikon_bangunan.png') }}" alt="Alamat" class="ikon-topnav">
             <p>Bagian Hukum Setda. Kota Wisata Batu</p>
             <img src="{{ asset('/img/bg//ikon_mail.png') }}" alt="E-mail" class="ikon-topnav">
@@ -49,17 +50,22 @@
                         Produk Hukum
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('peraturanhukum') }}">Peraturan Perundang-Undangan</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('monografihukum') }}">Monografi Hukum</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('artikelhukum') }}">Artikel Hukum</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('putusanpengadilan') }}">Putusan Pengadilan</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('produk-hukum') }}">Peraturan
+                                Perundang-Undangan</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('monografi-hukum') }}">Monografi
+                                Hukum</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('artikel-hukum') }}">Artikel
+                                Hukum</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('putusan-pengadilan') }}">Putusan
+                                Pengadilan</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Berita</a>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Statistik
                     </a>
                     <ul class="dropdown-menu">
@@ -71,18 +77,23 @@
                     <a class="nav-link" href="{{ route('forum') }}">Forum</a>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Profil
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('strukturorganisasi') }}">Struktur Organisasi</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('timpengelola') }}">Tim Pengelola</a></li>
-                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('dasarhukum') }}">Dasar Hukum</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua"
+                                href="{{ route('strukturorganisasi') }}">Struktur Organisasi</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('timpengelola') }}">Tim
+                                Pengelola</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('dasarhukum') }}">Dasar Hukum</a>
+                        </li>
                         <li><a class="dropdown-item item-navbar-kedua" href="{{ route('sop') }}">SOP</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Informasi Hukum
                     </a>
                     <ul class="dropdown-menu">
@@ -91,7 +102,8 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown dropdown-navbar-kedua">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Media
                     </a>
                     <ul class="dropdown-menu">

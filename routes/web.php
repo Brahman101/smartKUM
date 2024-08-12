@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PencarianController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
@@ -15,7 +16,6 @@ use App\Http\Controllers\NewestRulesController;
 use App\Http\Controllers\SekdaController;
 use App\Http\Controllers\WalikotaController;
 use App\Models\ProdukHukum;
-use App\Http\Controllers\ProdukHukumController;
 use App\Http\Controllers\TipeDokumenController;
 
 /*
@@ -99,9 +99,9 @@ Route::get('/sop', function () {
     return view('JDIH.sop');
 })->middleware('guest')->name('sop');
 
-Route::get('/beranda', function () {
-    return view('JDIH.beranda');
-})->middleware('guest')->name('beranda');
+// Route::get('/beranda', function () {
+//     return view('JDIH.beranda');
+// })->middleware('guest')->name('beranda');
 
 Route::get('/simprokum', function () {
     return view('simprokum');
@@ -109,11 +109,11 @@ Route::get('/simprokum', function () {
 
 Route::get('/beranda', [NewestRulesController::class, 'beranda'])->middleware('guest')->name('beranda');
 
-Route::get('/hasil-pencarian', [ProdukHukumController::class, 'cari'])->name('cari.produk.hukum');
+Route::get('/hasil-pencarian', [PencarianController::class, 'cari'])->name('cari.produk.hukum');
 
 
 // Rute untuk produk hukum
-Route::get('/produkhukum', [TipeDokumenController::class, 'produkHukum'])->name('produk-hukum');
+Route::get('/produk-hukum', [TipeDokumenController::class, 'produkHukum'])->name('produk-hukum');
 
 // Rute untuk artikel hukum
 Route::get('/artikel-hukum', [TipeDokumenController::class, 'artikelHukum'])->name('artikel-hukum');

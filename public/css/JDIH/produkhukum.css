@@ -36,12 +36,16 @@
 .new_rules-details {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    align-items: flex-end;
+    text-align: right;
     width: 100%;
 }
 
 .container .card-content {
     gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .custom-card:hover {
@@ -62,8 +66,22 @@ p {
     font-size: small;
 }
 
+.status-dokumen,
+.seen-counter,
+.download-counter {
+    margin-top: 5px;
+}
+
+h5,
+.p-new-rules {
+    margin: 0;
+    padding: 2px 0;
+}
+
 .information {
-    text-align: start;
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
 }
 
 .pagination {
@@ -81,4 +99,28 @@ p {
 
 .page-link:hover {
     color: #488b8f;
+}
+
+.sorting-options {
+    margin-bottom: 20px;
+}
+
+.sorting-options select {
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    color: #488b8f;
+    cursor: pointer;
+}
+
+.sorting-options select:hover {
+    background-color: #e8e8e8;
+}
+
+.sorting-options select:focus {
+    outline: none;
+    border-color: #488b8f;
+    box-shadow: 0 0 0 0.2rem #488c8f6a;
 }

@@ -10,18 +10,26 @@
         <div class="main">
             <div class="container">
                 <h2>Hasil Pencarian</h2>
+                @include('JDIH.components.sort-options')
                 @foreach ($hasilPencarian as $item)
                     @php
                         $abstrak_singkat = str_word_count($item['abstrak'], 2);
                         $abstrak_singkat = implode(' ', array_slice($abstrak_singkat, 0, 40)) . '...';
 
                     @endphp
-                    <a href="#" class="custom-card new-rules-card align-items-center justify-content-center">
-                        <div class="card-content d-flex flex-row align-items-center justify-content-between">
+                    <a href="#" class="custom-card new-rules-card ">
+                        <div class="card-content d-flex flex-row  justify-content-between">
                             <div class="information d-flex flex-column align-items-start justify-content-start">
                                 <h5>{{ $item['judul'] }}</h5>
                                 <p class="p-new-rules">{{ $abstrak_singkat }}</p>
+                                <div class="status-dokumen">
+                                    <span class="status-label">Status:</span>
+                                    <span class="status-value {{ strtolower($item['status_dokumen']) }}">
+                                        {{ $item['status_dokumen'] }}
+                                    </span>
+                                </div>
                             </div>
+
                             <div class="new-rules-details">
                                 <p class="p-new-rules">{{ $item['tanggal_pengundangan'] }}</p>
                                 <div class="seen-counter">
