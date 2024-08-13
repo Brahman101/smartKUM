@@ -121,7 +121,7 @@
 }
 
 .nav-link.dropdown-bs-toggle:hover {
-    color: #ffffff;
+    color: #ffffff ;
     background-color: #488b8f;
 }
 
@@ -183,6 +183,11 @@
 .nav-link.active {
     font-weight: bold;
     color: #488b8f !important;
+}
+
+.nav-link.active:hover{
+    font-weight: bold;
+    color: #fff !important;
 }
 
 .dropdown-item.active {
