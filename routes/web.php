@@ -99,9 +99,9 @@ Route::get('/sop', function () {
     return view('JDIH.sop');
 })->middleware('guest')->name('sop');
 
-// Route::get('/beranda', function () {
-//     return view('JDIH.beranda');
-// })->middleware('guest')->name('beranda');
+Route::get('/statistikprokum', function () {
+    return view('JDIH.statistikprokum');
+})->middleware('guest')->name('statistikprokum');
 
 Route::get('/simprokum', function () {
     return view('simprokum');
