@@ -20,5 +20,5 @@
 @endsection
 
 @section('js')
-<script src="{{ asset('js/newhome.js') }}"></script>
+<script src="{{ asset('js/beranda.js') }}"></script>
 @endsection

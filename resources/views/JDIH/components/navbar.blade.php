@@ -69,7 +69,7 @@
                         Statistik
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item item-navbar-kedua" href="#">Produk Hukum</a></li>
+                        <li><a class="dropdown-item item-navbar-kedua" href="{{ route('statistikprokum') }}">Produk Hukum</a></li>
                         <li><a class="dropdown-item item-navbar-kedua" href="#">Survei</a></li>
                     </ul>
                 </li>
