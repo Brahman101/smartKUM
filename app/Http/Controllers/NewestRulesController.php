@@ -32,63 +32,62 @@ class NewestRulesController extends Controller
         $jumlahArtikelHukum = DB::table('artikel_hukums')->count();
         $jumlahPutusanPengadilan = DB::table('putusan_pengadilans')->count();
 
-        foreach ($dokumenTerbaru as $item) {
-            if ($item->tipe == 'produk_hukum') {
-                $produkHukum = ProdukHukum::find($item->judul); // Ganti dengan kolom yang unik
-                if ($produkHukum) {
-                    $produkHukum->jumlah_dilihat += 1;
-                    $produkHukum->save();
-                }
-            } elseif ($item->tipe == 'monografi_hukum') {
-                $monografiHukum = MonografiHukum::find($item->judul); // Ganti dengan kolom yang unik
-                if ($monografiHukum) {
-                    $monografiHukum->jumlah_dilihat += 1;
-                    $monografiHukum->save();
-                }
-            } elseif ($item->tipe == 'artikel_hukum') {
-                $artikelHukum = ArtikelHukum::find($item->judul); // Ganti dengan kolom yang unik
-                if ($artikelHukum) {
-                    $artikelHukum->jumlah_dilihat += 1;
-                    $artikelHukum->save();
-                }
-            } elseif ($item->tipe == 'putusan_pengadilan') {
-                $putusanPengadilan = PutusanPengadilan::find($item->judul); // Ganti dengan kolom yang unik
-                if ($putusanPengadilan) {
-                    $putusanPengadilan->jumlah_dilihat += 1;
-                    $putusanPengadilan->save();
-                }
-            }
+        // foreach ($dokumenTerbaru as $item) {
+        //     if ($item->tipe == 'produk_hukum') {
+        //         $produkHukum = ProdukHukum::find($item->judul); // Ganti dengan kolom yang unik
+        //         if ($produkHukum) {
+        //             $produkHukum->jumlah_dilihat += 1;
+        //             $produkHukum->save();
+        //         }
+        //     } elseif ($item->tipe == 'monografi_hukum') {
+        //         $monografiHukum = MonografiHukum::find($item->judul); // Ganti dengan kolom yang unik
+        //         if ($monografiHukum) {
+        //             $monografiHukum->jumlah_dilihat += 1;
+        //             $monografiHukum->save();
+        //         }
+        //     } elseif ($item->tipe == 'artikel_hukum') {
+        //         $artikelHukum = ArtikelHukum::find($item->judul); // Ganti dengan kolom yang unik
+        //         if ($artikelHukum) {
+        //             $artikelHukum->jumlah_dilihat += 1;
+        //             $artikelHukum->save();
+        //         }
+        //     } elseif ($item->tipe == 'putusan_pengadilan') {
+        //         $putusanPengadilan = PutusanPengadilan::find($item->judul); // Ganti dengan kolom yang unik
+        //         if ($putusanPengadilan) {
+        //             $putusanPengadilan->jumlah_dilihat += 1;
+        //             $putusanPengadilan->save();
+        //         }
+        //     }
 
 
-            foreach ($dokumenTerbaru as $item) {
-                if ($item->tipe == 'produk_hukum') {
-                    $produkHukum = ProdukHukum::find($item->judul); // Ganti dengan kolom yang unik
-                    if ($produkHukum) {
-                        $produkHukum->jumlah_diunduh += 1;
-                        $produkHukum->save();
-                    }
-                } elseif ($item->tipe == 'monografi_hukum') {
-                    $monografiHukum = MonografiHukum::find($item->judul); // Ganti dengan kolom yang unik
-                    if ($monografiHukum) {
-                        $monografiHukum->jumlah_diunduh += 1;
-                        $monografiHukum->save();
-                    }
-                } elseif ($item->tipe == 'artikel_hukum') {
-                    $artikelHukum = ArtikelHukum::find($item->judul); // Ganti dengan kolom yang unik
-                    if ($artikelHukum) {
-                        $artikelHukum->jumlah_diunduh += 1;
-                        $artikelHukum->save();
-                    }
-                } elseif ($item->tipe == 'putusan_pengadilan') {
-                    $putusanPengadilan = PutusanPengadilan::find($item->judul); // Ganti dengan kolom yang unik
-                    if ($putusanPengadilan) {
-                        $putusanPengadilan->jumlah_diunduh += 1;
-                        $putusanPengadilan->save();
-                    }
-                }
-            }
+        //     foreach ($dokumenTerbaru as $item) {
+        //         if ($item->tipe == 'produk_hukum') {
+        //             $produkHukum = ProdukHukum::find($item->judul); // Ganti dengan kolom yang unik
+        //             if ($produkHukum) {
+        //                 $produkHukum->jumlah_diunduh += 1;
+        //                 $produkHukum->save();
+        //             }
+        //         } elseif ($item->tipe == 'monografi_hukum') {
+        //             $monografiHukum = MonografiHukum::find($item->judul); // Ganti dengan kolom yang unik
+        //             if ($monografiHukum) {
+        //                 $monografiHukum->jumlah_diunduh += 1;
+        //                 $monografiHukum->save();
+        //             }
+        //         } elseif ($item->tipe == 'artikel_hukum') {
+        //             $artikelHukum = ArtikelHukum::find($item->judul); // Ganti dengan kolom yang unik
+        //             if ($artikelHukum) {
+        //                 $artikelHukum->jumlah_diunduh += 1;
+        //                 $artikelHukum->save();
+        //             }
+        //         } elseif ($item->tipe == 'putusan_pengadilan') {
+        //             $putusanPengadilan = PutusanPengadilan::find($item->judul); // Ganti dengan kolom yang unik
+        //             if ($putusanPengadilan) {
+        //                 $putusanPengadilan->jumlah_diunduh += 1;
+        //                 $putusanPengadilan->save();
+        //             }
+        //         }
+        //     }
 
-            return view('JDIH.beranda', compact('dokumenTerbaru', 'jumlahProdukHukum', 'jumlahMonografiHukum', 'jumlahArtikelHukum', 'jumlahPutusanPengadilan'));
-        }
+        return view('JDIH.beranda', compact('dokumenTerbaru', 'jumlahProdukHukum', 'jumlahMonografiHukum', 'jumlahArtikelHukum', 'jumlahPutusanPengadilan'));
     }
 }

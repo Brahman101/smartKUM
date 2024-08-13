@@ -156,11 +156,11 @@
                                 <p class="p-new-rules">{{ $item->tanggal_pengundangan }}</p>
                                 <div class="seen-counter">
                                     <i class="fas fa-eye"></i>
-                                    <p class="p-new-rules">{{ $item->jumlah_dilihat }}</p>
+                                    <p class="p-new-rules"></p>
                                 </div>
                                 <div class="download-counter">
                                     <i class="fas fa-download"></i>
-                                    <p class="p-new-rules">{{ $item->jumlah_diunduh }}</p>
+                                    <p class="p-new-rules"></p>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
         <!-- Document Quantity Chart Here! -->
         <!-- <section class="doc-chart">
 
-                                                                                                                                                        </section> -->
+                                                                                                                                                            </section> -->
         <!-- News & Activity -->
         {{-- <section class="news-activity d-flex align-items-center justify-content-center">
         <div class="container d-flex flex-column align-items-center">

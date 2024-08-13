@@ -53,21 +53,21 @@ class TipeDokumenController extends Controller
             ->orderBy('created_at', 'desc')
             ->paginate(10); // Menggunakan pagination dengan 10 data per halaman
 
-        foreach ($artikelHukum as $item) {
-            $artikelHukum = artikelHukum::find($item->judul); // Ganti dengan kolom yang unik
-            if ($artikelHukum) {
-                $artikelHukum->jumlah_dilihat += 1;
-                $artikelHukum->save();
-            }
-        }
+        // foreach ($artikelHukum as $item) {
+        //     $artikelHukum = artikelHukum::find($item->judul); // Ganti dengan kolom yang unik
+        //     if ($artikelHukum) {
+        //         $artikelHukum->jumlah_dilihat += 1;
+        //         $artikelHukum->save();
+        //     }
+        // }
 
-        foreach ($artikelHukum as $item) {
-            $artikelHukum = artikelHukum::find($item->judul); // Ganti dengan kolom yang unik
-            if ($artikelHukum) {
-                $artikelHukum->jumlah_diunduh += 1;
-                $artikelHukum->save();
-            }
-        }
+        // foreach ($artikelHukum as $item) {
+        //     $artikelHukum = artikelHukum::find($item->judul); // Ganti dengan kolom yang unik
+        //     if ($artikelHukum) {
+        //         $artikelHukum->jumlah_diunduh += 1;
+        //         $artikelHukum->save();
+        //     }
+        // }
 
         return view('JDIH.artikelhukum', compact('artikelHukum'));
     }
@@ -79,21 +79,21 @@ class TipeDokumenController extends Controller
             ->orderBy('created_at', 'desc')
             ->paginate(10);
 
-        foreach ($monografiHukum as $item) {
-            $monografiHukum = MonografiHukum::find($item->judul);
-            if ($monografiHukum) {
-                $monografiHukum->jumlah_dilihat += 1;
-                $monografiHukum->save();
-            }
-        }
+        // foreach ($monografiHukum as $item) {
+        //     $monografiHukum = MonografiHukum::find($item->judul);
+        //     if ($monografiHukum) {
+        //         $monografiHukum->jumlah_dilihat += 1;
+        //         $monografiHukum->save();
+        //     }
+        // }
 
-        foreach ($monografiHukum as $item) {
-            $monografiHukum = MonografiHukum::find($item->judul);
-            if ($monografiHukum) {
-                $monografiHukum->jumlah_diunduh += 1;
-                $monografiHukum->save();
-            }
-        }
+        // foreach ($monografiHukum as $item) {
+        //     $monografiHukum = MonografiHukum::find($item->judul);
+        //     if ($monografiHukum) {
+        //         $monografiHukum->jumlah_diunduh += 1;
+        //         $monografiHukum->save();
+        //     }
+        // }
 
         return view('JDIH.monografihukum', compact('monografiHukum'));
     }
@@ -104,21 +104,21 @@ class TipeDokumenController extends Controller
             ->orderBy('created_at', 'desc')
             ->paginate(10);
 
-        foreach ($putusanPengadilan as $item) {
-            $putusanPengadilan = PutusanPengadilan::find($item->judul);
-            if ($putusanPengadilan) {
-                $putusanPengadilan->jumlah_dilihat += 1;
-                $putusanPengadilan->save();
-            }
-        }
+        // foreach ($putusanPengadilan as $item) {
+        //     $putusanPengadilan = PutusanPengadilan::find($item->judul);
+        //     if ($putusanPengadilan) {
+        //         $putusanPengadilan->jumlah_dilihat += 1;
+        //         $putusanPengadilan->save();
+        //     }
+        // }
 
-        foreach ($putusanPengadilan as $item) {
-            $putusanPengadilan = PutusanPengadilan::find($item->judul);
-            if ($putusanPengadilan) {
-                $putusanPengadilan->jumlah_diunduh += 1;
-                $putusanPengadilan->save();
-            }
-        }
+        // foreach ($putusanPengadilan as $item) {
+        //     $putusanPengadilan = PutusanPengadilan::find($item->judul);
+        //     if ($putusanPengadilan) {
+        //         $putusanPengadilan->jumlah_diunduh += 1;
+        //         $putusanPengadilan->save();
+        //     }
+        // }
 
         return view('JDIH.putusanpengadilan', compact('putusanPengadilan'));
     }
