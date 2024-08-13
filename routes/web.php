@@ -107,7 +107,7 @@ Route::get('/simprokum', function () {
     return view('simprokum');
 })->name('simprokum');
 
-Route::get('/beranda', [NewestRulesController::class, 'beranda'])->middleware('guest')->name('beranda');
+Route::get('/', [NewestRulesController::class, 'beranda'])->middleware('guest')->name('beranda');
 
 Route::get('/hasil-pencarian', [PencarianController::class, 'cari'])->name('cari.produk.hukum');
 
