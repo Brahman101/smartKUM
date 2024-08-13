@@ -32,7 +32,7 @@
             <a class="nav-link" href="/simprokum">Beranda</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/beranda">JDIH Kota Batu</a>
+            <a class="nav-link" href="/">JDIH Kota Batu</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/inovasisimprokum">Inovasi SIMPROKUM</a>
@@ -43,16 +43,4 @@
     </ul>
 </nav>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const currentLocation = window.location.href;
-        const menuItem = document.querySelectorAll('#navbar .nav-link');
-        const menuLength = menuItem.length;
-
-        for (let i = 0; i < menuLength; i++) {
-            if (menuItem[i].href === currentLocation) {
-                menuItem[i].classList.add("active");
-            }
-        }
-    });
-</script>
+<script src="{{ asset('js/newhome.js') }}"></script>
